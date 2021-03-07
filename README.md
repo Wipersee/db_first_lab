@@ -9,9 +9,14 @@ docker-compose up
 ```
 *Далі запуск відрізняється залежно від системи*
 - GNU/Linux
-    Для того щоб запустити достатьно просто виконати
+    Для того щоб запустити
     ```
-    make run
+    python3 -m pip install virtualenv
+    python3 -m venv bd_env
+    source bd_env/bin/activate
+    source .env
+    python3 -m pip install -r requirements.dev
+    python3 main.py
     ```
 - Windows OS
     Треба послідовно виконати наступні дії в окремому терміналі
@@ -20,6 +25,7 @@ docker-compose up
     py -m venv env
     .\bd_env\Scripts\activate
     py -m pip install -r requirements.txt
+    source .env
     py main.py
     ```
 *py це execute команда python3, можливо у вас вона відрізняється*
