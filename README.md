@@ -66,7 +66,7 @@ outid|birth|sextypename|regname
 
 year_file | row_num | execute_time
 --- | --- | --- 
-2020 | 67050 | 191147838
+2019 | 125650 | 25112587
 
 ### Logs example
 
@@ -123,3 +123,4 @@ server closed the connection unexpectedly
 03-07-2021 15:10:01 INFO at row #159 Program is finished
 ```
 ***Як видно час на виконання достатньо швидкий, імпортувалося 733112 рядків, тобто 100% csv файлу***
+### Всі змінні для з'єднання з бд зберігаються в .env файлі (ВАЖЛИВО, після зміни в цьому файли потрібно обновити змінні локального середовища: source .env)
