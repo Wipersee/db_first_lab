@@ -23,7 +23,7 @@ docker-compose up
     ```
     py -m pip install --user virtualenv
     py -m venv env
-    .\bd_env\Scripts\activate
+    .\env\Scripts\activate
     py -m pip install -r requirements.txt
     source .env
     py main.py
